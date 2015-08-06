@@ -5,7 +5,7 @@ MAINTAINER Seif Attar <iam@seifattar.net>
 RUN apt-get update \
         && apt-get install wget  -y --no-install-recommends \
         && wget -qO - http://download.mono-project.com/repo/xamarin.gpg | apt-key add - \
-       && echo "deb http://download.mono-project.com/repo/debian nightly/snapshots/8f7b98b9b23dd5cc42011cff5c5c31b32ae1b556 main" > /etc/apt/sources.list.d/mono-xamarin.list \
+        && echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10.0 main" > /etc/apt/sources.list.d/mono-xamarin.list \
         && echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
         && echo "deb http://download.mono-project.com/repo/debian wheezy-apache24-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list \
         && apt-get update \
