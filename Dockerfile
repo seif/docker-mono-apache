@@ -1,5 +1,5 @@
-FROM mono
- 
+FROM mono:4.4
+
 MAINTAINER Seif Attar <iam@seifattar.net>
 
 RUN apt-get update \
