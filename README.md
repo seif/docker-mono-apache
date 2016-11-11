@@ -1,4 +1,4 @@
-## Run mono web applications with apacke mod_mono
+## Run mono web applications with apache mod_mono
 
 This repository contains Dockerfile for publishing Docker's automated build to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
