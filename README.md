@@ -12,11 +12,11 @@ This repository contains Dockerfile for publishing Docker's automated build to t
 
 First you need to pull the image:
 
-    docker pull seif/docker-mono-apache
+    docker pull seif/mono-apache
 
 Then build your project, create a Dockerfile, copy the application to /var/www and start runit:
 
-    FROM seif/docker-mono-apache
+    FROM seif/mono-apache
     ADD buildOutput/website /var/www/
     CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
